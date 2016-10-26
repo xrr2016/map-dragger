@@ -7,7 +7,7 @@ import mutations from './mutations'
 Vue.use(Vuex)
 
 const SANTA_MONICA = {
-    left: -1200,
+    left: 0,
     top: 0
 }
 

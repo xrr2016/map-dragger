@@ -46,7 +46,7 @@ function onCreate() {
         const constrainTo = boundaryCalc($map, $viewport)
 
         $map.on('load', () => {
-            $map.pep({ constrainTo,rest,initiate}).css(store.state.coordinates) //eq. {}
+            $map.pep({ constrainTo,rest,initiate}).css(store.state.coordinates)
             store.dispatch('setMapLoaded')
         })
     })
