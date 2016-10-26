@@ -1,0 +1,20 @@
+{
+  "name": "vue-map-dragger",
+  "description": "A Vue.js project",
+  "main": "",
+  "authors": [
+    "xrr2016"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xrr2016/map-dragger",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.pep": "^0.6.8"
+  }
+}
