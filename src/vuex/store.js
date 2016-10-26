@@ -11,9 +11,20 @@ const SANTA_MONICA = {
     top: 0
 }
 
+let coordinates;
+
+try {
+  const hash = window.location.hash.slice(1)
+  const coorString = window.decodeURIComponent(hash)
+  coordinates = JSON.parse(coorString)
+} catch (e) {
+  console.log("Error deserializing coordinates",e)
+  coordinates = SANTA_MONICA
+}
+
 const state = {
     mapName: 'old indes orientales',
-    coordinates: SANTA_MONICA,
+    coordinates: coordinates,
     mapLoaded : false,
 }
 
